@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(23, 198, 233);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+input {
+  display: block;
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin: 12px auto;
+  border-radius: 10px;
+}
+
+.details {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.details h1 {
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: rgb(61, 197, 61);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 14px 17px;
+  margin: 0 auto;
+  display: block;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(26, 244, 26);
+}
+
+.container {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(249, 238, 226);
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.container img {
+  margin-top: 6px;
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.container hr {
+  margin: 0;
+}
+
+.dayscholar,
+.hosteller {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  height: 40px;
+  margin: 10px auto 0;
+  border-radius: 20px;
+  padding: 0px;
+}
+
+.dayscholar {
+  background-color: rgb(250, 62, 124);
+}
+
+.hosteller {
+  background-color: rgb(30, 51, 240);
+}
+
+.name {
+  text-transform: uppercase;
+  color: blue;
+}
+
+@media (min-width: 600px) {
+  .details,
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  #root {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .details,
+  .container {
+    width: 45%;
+    margin: 0;
+  }
+}
